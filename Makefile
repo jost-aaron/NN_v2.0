@@ -1,5 +1,5 @@
 output: NN.o math.o
-	g++ NN.o -o output
+	g++ NN.o -lOpenCL -o output
 
 NN.o: NN.cpp math.cpp
 	g++ -c NN.cpp math.cpp

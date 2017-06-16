@@ -5,17 +5,17 @@
 
 int main() {
 
-  matrix <double> a(3,3);
+  matrix <float> a(3,3);
   //a.multiply_scaler(2);
   a.print();
-  std::vector<double> v {1,2,3};
+  std::vector<float> v {1,2,3};
 
-  matrix<double> b = a.multiply_vector(&v);
+  matrix<float> b = a.multiply_vector(&v);
 
   b.print();
 
 
-  std::vector<double> v_out = a.multiply_vector_dot(&v);
+  std::vector<float> v_out = a.multiply_vector_dot(&v);
 
   print_vector(v_out);
 
